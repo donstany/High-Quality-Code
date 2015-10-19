@@ -1,0 +1,136 @@
+- In visual Studio rename Solution project to BuhtingIssueTrackerSystem
+/commit fatch 22:39 - add solution to source control, check git - right click over solution /
+
+- rename Projrect to BuhtingIssueTracker and close Visual studio
+
+- go to folder skeleton, inside rename current buhting folder to BuhtingIssueTracker, after this go inside in folder / BuhtingIssueTracker.csproj file now must be ok dont touch it- how to build project info/
+
+- turn back in main folder Skeleton
+open BuhtingIssueTrackerSystem.sln with notepad++ for edit. 
+In row 6 Project (.......) go to buhting\BuhtingIssueTracker.csproj and rename 
+to BuhtingIssueTracker\BuhtingIssueTracker.csproj / i.e. the first word buhting to BuhtingIssueTracker/ - 24:00 min
+
+- Open again in Visual Studio BuhtingIssueTrackerSystem.sln
+
+- Right click on project BuhtingIssueTracker and go to properties 
+
+- rename /26:34/ assemly name and default namesace from buhting to BuhtingIssueTracker 
+--------------------------------------
+for 2 task on exam
+- over project stylecop settings uncheck documentation
+ctrl + shift + Y 
+--------------------------------
+
+remove unecessery using in main() - program.cd
+- cut main and paste it again with namespace BuhtingIssueTracker , using must be only in mamespace
+
+- F2 rename Engine to BuhtingIssueTrackerEngine
+
+- rename Program.cs and class to BuhtingIssueTrackerProgram  
+
+ctrl +k +d 
+
+run class diagram, view class diagram
+
+-------------------------
+
+- extract interface in new folder interface
+
+- in if.cs extract all interface in new .cs file standalone interface in file. IBuhtingIssueTrackerData.cs, Remove all using  we will put it on demand. 
+- On demand we put to all members ctrl+. new references to using.
+
+- ctrl+shift+p will take all needed packages for example power collection,/ in firdt build will go to internet and download it/, or place it manually in our case -> right click on project/ manage/ NuGet packages wintellect. to add phisically file in project
+
+-  / if we want to upload in git right click over solution and click commit . put massage and coomit./
+
+- end point is an url . create new interface in folder  IEndpoint.cs
+- if there is no referernce in some member go to it and press ctrl +. to add usnig, in interface member is not public becouse all inte rface is pulic,
+- rename action name - command pattern in web service is action
+
+- all interface must be public 
+
+- build the project and click over stylecop to add references  
+
+- be care when rename in interface we must change all reference for example ActionName
+
+- remove if.cs 
+
+------------
+rename all to prop in interface 
+
+- User CurrentUser or CurrentlyLoggedUser
+
+- rename all Problem with Issue will ctrl +r+r, Kommentar - Comment 
+
+------
+
+- in innerlaiben class - extract engine
+ 
+ ----
+ - rename class dispatcher to EndpointActionDispatcher -  Nota bene all class must start with upper case, and variable d to dispatcher 
+ - remove namespace in the class we put using directive
+ 
+ / this is instance variable in othe =r case is a static variable
+
+- replace c with Console
+
+- BuhtingIssueTrackerEngine.cs  in if condition is not = , the tuth is ==, in if condition put ! in string.IsNullOrEmpty , var en replace with var endpoint, in if every time put curly brace
+
+ -----
+ 
+ - extract from Innerlebenn  class EndpointActionDispatcher in new .cs fail, include using in namespace .
+
+ - in clas Stuff.cs rename IssuePrioritat to IssuePrioritet 
+
+ - in EndpointActionDispatcher.cs , BuhtingIssueTrackerEngine.cs, /Endpoint add later not now/ must be in new folder Execution / help for Execution/.  Move this cs in folder Execution.  Related with commands - executionhelper.
+ 
+ - add using with ctrl+. +
+ 
+ - in Endpoint.cs rename variable s with url
+
+ - rename var pairs to var parameterKeyValuePairs
+ -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
